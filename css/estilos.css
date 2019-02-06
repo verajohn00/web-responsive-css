@@ -1,0 +1,173 @@
+
+@keyframes bounce {
+ 	0%{
+ 		margin-top: 150%;
+ 	}  
+ 	60%{
+ 		margin-top: -5%; 		
+ 	}
+ 	100%{
+ 		margin-top: 0%; 		
+ 	}
+}
+
+body{
+	margin: 0 auto;
+	background-color: #02010a;
+	font-family: 'Dancing Script';
+}
+.title{
+	text-shadow: 2px 2px #02010a;
+	color: white;
+}
+.header{
+	background-color: #5b7989;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	animation: bounce 2s;
+}
+nav a{
+	text-decoration: none;
+	color: white;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+.principal{
+	text-align: center;	
+	padding: 40px;
+	background-color: #82c3a6;
+}
+
+.section{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: #d5c75f;
+}
+.imgsection{
+	border: solid 1px;
+}
+
+.footer{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	width: 100%;	
+	background-color:  #C6d5c5;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.footer p{
+    margin: 0 auto;
+}
+
+.foo1{
+	padding: 15px;
+}
+.foo1 a{
+	text-decoration: none;
+	color: black;
+}
+
+#img_paisajes{
+	box-shadow: 2px 2px #02010a;	
+	transition-duration: 1s;
+	transform: rotate(0deg);
+}
+#img_paisajes:hover{
+	box-shadow: 2px 2px #82c3a6;
+	transition-duration: 1s;
+	transform: rotate(10deg);
+}
+#img_retratos{
+	box-shadow: 2px 2px #02010a;	
+	transition-duration: 1s;
+	transform: translate(0px, 0px);
+}
+#img_retratos:hover{
+	box-shadow: 2px 2px #82c3a6;
+	transition-duration: 1s;
+	transform: translate(5px, -20px);
+}
+.img_link{
+	text-decoration: none;
+	color: black;
+}
+
+#paisaje_efecto1{
+	filter: blur(10px);
+}
+#paisaje_efecto_par{
+	filter: grayscale(100%);
+}
+#paisaje_efecto_sepia{
+	filter: sepia(90%);
+}
+
+@media (max-width: 900px){
+	.contenido{
+		width: 100%;
+	}
+	.imgaleria{
+		width: 100%;
+	}
+	.foo1{
+		width: 100%;
+	}
+	.title{
+		text-align: center;
+	}
+	nav{
+		text-align: center;		
+		padding-bottom: 20px;
+	}
+	.imgsection{
+		width: 90%;
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 901px){
+	.contenido{
+		width: 900px;
+		margin: auto;
+	}
+
+	.imgaleria{
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		width: 33%;
+	}
+	.imgprincipal{
+		margin-left: auto;
+		margin-right: auto;
+		width: 45%;
+	}
+	.imgsection{
+		width: 90%;
+	}
+
+	.foo1{
+		margin-left: auto;
+		margin-right: auto;
+		width: 20%;
+	}
+	.title{
+		display: inline-block;
+		width: 46%;
+		margin-left: 10px;
+	}
+	nav{
+		display: inline-block;
+		width: 50%;
+		text-align: right;
+	}
+}
